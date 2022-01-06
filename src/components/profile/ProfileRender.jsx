@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import {Profile, Description, Avatar, Name, Tag, Stats, Item} from './SocialProfile.styled';
-export default function SocProfRender({userName, tag, place, avatar, stats}) {
+import {Profile, Description, Avatar, Name, Tag, Stats, Item} from './Profile.styled';
+export default function ProfRender({userName, tag, place, avatar, stats}) {
     
     return <Profile>
     <Description>
@@ -33,7 +33,7 @@ export default function SocProfRender({userName, tag, place, avatar, stats}) {
     </Stats>
   </Profile>
 }
-SocProfRender.propTypes = {
+ProfRender.propTypes = {
     avatar: PropTypes.string.isRequired,
     userName: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,

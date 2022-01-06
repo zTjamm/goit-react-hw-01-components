@@ -53,6 +53,3 @@ border: 1px solid #00101030;
 width: calc(100%/3);
 }
 `;
-
-
-

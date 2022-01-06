@@ -1,5 +1,5 @@
-import SocProfRender from "./components/social-profile/SocialProfileRender";
-import user from "./components/social-profile/user.json";
+import ProfRender from "./components/profile/ProfileRender";
+import user from "./components/profile/user.json";
 import StatisticRender from "./components/statistics/StatisticRender";
 import data from "./components/statistics/data.json";
 import FriendsListRender from "./components/friend-list/FriendsListRender";
@@ -13,19 +13,16 @@ export default function App() {
   return (
       <div>
       <Global styles={GlobalStyles} />
-      <SocProfRender
+      <ProfRender
         userName={user.username}
         tag={user.tag}
         place={user.location}
         avatar={user.avatar}
         stats={user.stats}
       />
-
-      <StatisticRender data = {data} />
-         
+      <StatisticRender data = {data} />         
       <FriendsListRender friends={friends}  />
-      <TransHistoryRender transactions={transactions}/>
-                
+      <TransHistoryRender transactions={transactions}/>                
     </div>
   );
 }
