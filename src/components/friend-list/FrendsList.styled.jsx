@@ -24,7 +24,7 @@ export const Status = styled.span`
       case "online":
         return "#00FF00";
       case "ofline":
-        return "#FF00FF";
+        return "#FF0000";
       default:
         return "000000";
     }}};
