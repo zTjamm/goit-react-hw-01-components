@@ -3,19 +3,18 @@ export const Section = styled.section`
 display: flex;
 flex-direction: column;
 justify-content: center;
-
 margin: 0 auto;
 max-width: 600px;
 width:100%;
-
 `
 export const Title = styled.h2`
 font-size: 30px;
 text-transform: uppercase;
 text-align: center;
-background-color: #00FFFF;
+background-color: #FFFFFF;
+border: 1px solid black;
 margin: 0;
-color: #FFFF00;
+color: #000;
 padding:25px;
 `
 export const StatList = styled.ul`
@@ -24,7 +23,7 @@ margin: 0;
 padding: 0;
 display: flex;
 flex-direction: row;
-
+border: 1px solid black;
 `
 export const Item = styled.li`
 display: flex;
