@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {Table,TableHead, TableHeadList, TableHeadItem, TableBody, TableBodyList, TableBodyItem} from './Transactions.styled'
-export default function TransHistoryRender({ transactions }) {
+export default function TransHistory({ transactions }) {
   return (
     <Table >
       <TableHead>
@@ -25,7 +25,7 @@ export default function TransHistoryRender({ transactions }) {
     </Table>
   );
 }
-TransHistoryRender.propTypes = {
+TransHistory.propTypes = {
   transactions: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

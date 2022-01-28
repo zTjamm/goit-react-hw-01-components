@@ -1,17 +1,28 @@
 import PropTypes from "prop-types";
-import {Item, Status, Avatar, Name} from './FrendsList.styled'
-export default function FriendsList({avatar, name, isOnline}) {
-    return (
-      <Item>
-    <Status state={isOnline ? 'online' : 'ofline'}>
-     
-    </Status>
-    <Avatar src={avatar} alt="User avatar" width="48" />
-    <Name>{name}</Name>
-  </Item>)
+import OnLineFriends from "./OnLineFriends";
+import {FriendList} from './FrendsList.styled'
+
+function FriendsList({ friends }) {
+   return( <FriendList>
+   {friends.map(({id,avatar,name,isOnline}) => (
+         <OnLineFriends
+         key={id}
+         avatar={avatar}
+         name={name}
+         isOnline={isOnline}
+       />
+       
+     ))}
+   </FriendList>)
 }
 FriendsList.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    avatar:PropTypes.string.isRequired,
+    name:PropTypes.string.isRequired,
+    isOnline:PropTypes.bool.isRequired,
+  }),
+  ),
 };
+export default FriendsList;
