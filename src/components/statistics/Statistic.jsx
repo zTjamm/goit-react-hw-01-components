@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {Section, Title, StatList, Item, Label, Percentage} from "./Statistics.styled"
-export default function StatisticRender({ data }) {
+export default function Statistic({ data }) {
   return (
     <Section>
       <Title>Upload stats</Title>
@@ -18,13 +18,13 @@ export default function StatisticRender({ data }) {
     </Section>
   );
 }
-StatisticRender.propTypes = {
+Statistic.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape(
     { id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
       percentage: PropTypes.number.isRequired,
       
      })),
-     
+     title: PropTypes.string,
 };
 
