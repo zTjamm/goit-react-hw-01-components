@@ -6,7 +6,7 @@ export default function OnLineFriends({avatar, name, isOnline}) {
     <Status state={isOnline ? 'online' : 'ofline'}>
      
     </Status>
-    <Avatar src={avatar} alt="User avatar" width="48" />
+    <Avatar src={avatar} alt="User avatar" width="100" />
     <Name>{name}</Name>
   </Item>)
 }

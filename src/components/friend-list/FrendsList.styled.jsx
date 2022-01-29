@@ -14,8 +14,8 @@ export const Item = styled.li`
   align-items: center;
 `;
 export const Status = styled.span`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: block;
   margin: 0 30px 0 0;
@@ -31,11 +31,12 @@ export const Status = styled.span`
   
 `;
 export const Avatar = styled.img`
-width: 80px;
 border: 1px solid #BBCCFF;
-border-radius: 25px;
-padding: 10px`;
+border-radius: 15px;
+`;
+
 export const Name = styled.p`
-margin: 0 0 0 50px;
 font-size: 45px;
-margin: 0 30px 0 auto`;
+text-align: center;
+margin-left: 25px;
+`;
