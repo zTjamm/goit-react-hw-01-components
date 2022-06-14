@@ -2,7 +2,7 @@
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zTjamm.github.io/goit-react-hw-01-components/",
+  "homepage": "https://zTjamm.github.io/full-stack5-hw-01/",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.7.1",
@@ -64,7 +64,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js src/*.html --public-url /goit-react-hw-01-components/",
+    "build": "node scripts/build.js src/*.html --public-url /full-stack5-hw-01/",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
